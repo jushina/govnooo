@@ -292,22 +292,22 @@ Library.theme.titlesize = 17
 local CursorPath = Instance.new("ScreenGui")
 local Swastika = Instance.new("TextLabel")
 
-CursorPath.Name = ""
+CursorPath.Name = "CursorPath"
 CursorPath.Parent = game.CoreGui
 CursorPath.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Swastika.Name = "."
-Swastika.Parent = false
+Swastika.Name = "Swastika"
+Swastika.Parent = CursorPath
 Swastika.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Swastika.BackgroundTransparency = 1.000
 Swastika.BorderSizePixel = 2
 Swastika.Position = UDim2.new(0, 0, 0, 0)
 Swastika.Size = UDim2.new(0, 93, 0, 84)
 Swastika.Font = Enum.Font.SourceSans
-Swastika.Text = "."
+Swastika.Text = "卍"
 Swastika.TextColor3 = Color3.fromRGB(0, 0, 0)
 Swastika.TextSize = 46.000
-Swastika.TextTransparency = 1
+Swastika.TextTransparency = 0
 Swastika.Rotation = 45
 Swastika.Visible = false
 
@@ -344,7 +344,7 @@ PrayingAnimation.AnimationId = "rbxassetid://3487719500"
 ]]
 local LocalPlayer = game.Players.LocalPlayer
 local CC = game.Workspace.CurrentCamera
-local LocalMouse = LocalPlayer:GetMouse()
+local LocalMouse = LocalPlayer:GetMouse(1)
 
 --// Main Table
 
@@ -1191,7 +1191,7 @@ d:AddToggle(
 local TopCursorToggle =
     e:AddToggle(
     "Top",
-    false,
+    true,
     function(Boolean)
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Top.Visible = Boolean
     end
@@ -1208,7 +1208,7 @@ local TopCursorColor =
 local MiddleCursorToggle =
     e:AddToggle(
     "Middle",
-    false,
+    true,
     function(Boolean)
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Visible = Boolean
     end
@@ -1225,7 +1225,7 @@ local MiddleCursorColor =
 local BottomCursorToggle =
     e:AddToggle(
     "Bottom",
-    false,
+    true,
     function(Boolean)
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Bottom.Visible = Boolean
     end
@@ -1242,7 +1242,7 @@ local BottomCursorColor =
 local LeftCursorToggle =
     e:AddToggle(
     "Left",
-    false,
+    true,
     function(Boolean)
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Left.Visible = Boolean
     end
@@ -1259,7 +1259,7 @@ local LeftCursorColor =
 local RightCursorToggle =
     e:AddToggle(
     "Right",
-    false,
+    true,
     function(Boolean)
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Right.Visible = Boolean
     end
