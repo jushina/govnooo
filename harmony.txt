@@ -1191,7 +1191,7 @@ d:AddToggle(
 local TopCursorToggle =
     e:AddToggle(
     "Top",
-    true,
+    false,
     function(Boolean)
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Top.Visible = Boolean
     end
@@ -1208,7 +1208,7 @@ local TopCursorColor =
 local MiddleCursorToggle =
     e:AddToggle(
     "Middle",
-    true,
+    false,
     function(Boolean)
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Visible = Boolean
     end
@@ -1225,7 +1225,7 @@ local MiddleCursorColor =
 local BottomCursorToggle =
     e:AddToggle(
     "Bottom",
-    true,
+    false,
     function(Boolean)
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Bottom.Visible = Boolean
     end
@@ -1242,7 +1242,7 @@ local BottomCursorColor =
 local LeftCursorToggle =
     e:AddToggle(
     "Left",
-    true,
+    false,
     function(Boolean)
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Left.Visible = Boolean
     end
@@ -1259,7 +1259,7 @@ local LeftCursorColor =
 local RightCursorToggle =
     e:AddToggle(
     "Right",
-    true,
+    false,
     function(Boolean)
         game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Right.Visible = Boolean
     end
