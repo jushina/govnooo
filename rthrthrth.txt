@@ -292,10 +292,6 @@ Library.theme.titlesize = 17
 local CursorPath = Instance.new("ScreenGui")
 local Swastika = Instance.new("TextLabel")
 
-CursorPath.Name = "CursorPath"
-CursorPath.Parent = game.CoreGui
-CursorPath.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
 Swastika.Name = "Swastika"
 Swastika.Parent = CursorPath
 Swastika.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
