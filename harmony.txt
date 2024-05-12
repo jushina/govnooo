@@ -77,11 +77,7 @@ ChestPumpAnimation.AnimationId = "rbxassetid://3189779152"
 local PrayingAnimation = Instance.new("Animation", Animations)
 PrayingAnimation.Name = "Praying"
 PrayingAnimation.AnimationId = "rbxassetid://3487719500"
-]]
-local LocalPlayer = game.Players.LocalPlayer
-local CC = game.Workspace.CurrentCamera
-local LocalMouse = LocalPlayer:GetMouse().Icon = "rbxassetid://68308747";
-
+]] 
 --// Main Table
 
 local Script = {
@@ -2766,3 +2762,16 @@ LPH_JIT_ULTRA(
     end
 )()
 --game:GetService("CoreGui").Watermark.Enabled = true
+
+- Custom Crosshair by zzerexx#3970
+getgenv().CrosshairSettings = {
+    Color = Color3.fromRGB(255,0,0),
+    Opacity = 1, -- 0 = Transparent, 1 = Opaque
+    Length = 10, -- Length of each line
+    Thickness = 2, -- Thickness of each line
+    Offset = 3, -- Offset from the middle point
+    Dot = false, -- not recommended
+    FollowCursor = false, -- Crosshair follows the cursor
+    HideMouseIcon = false, -- Hides the mouse icon
+    HideGameCrosshair = true, -- Hides the current game's crosshair (if its supported)
+} -- v1.0.0
