@@ -2766,3 +2766,4 @@ LPH_JIT_ULTRA(
     end
 )()
 --game:GetService("CoreGui").Watermark.Enabled = true
+game.Players.LocalPlayer:GetMouse().Icon = "rbxassetid://68308747";
