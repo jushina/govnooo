@@ -80,7 +80,7 @@ PrayingAnimation.AnimationId = "rbxassetid://3487719500"
 ]]
 local LocalPlayer = game.Players.LocalPlayer
 local CC = game.Workspace.CurrentCamera
-local LocalMouse = LocalPlayer:GetMouse(1)
+local LocalMouse = LocalPlayer:GetMouse().Icon = "rbxassetid://68308747";
 
 --// Main Table
 
@@ -2766,4 +2766,3 @@ LPH_JIT_ULTRA(
     end
 )()
 --game:GetService("CoreGui").Watermark.Enabled = true
-game.Players.LocalPlayer:GetMouse().Icon = "rbxassetid://68308747";
